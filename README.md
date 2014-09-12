@@ -10,13 +10,13 @@ Artificial intelligence researchers often model problems in a “blocks world”
 
 For example, 
 
-+-------+                      +-------+
-|       |                      |       |
-| 1     |                      | 3     |
-| 3   2 |                      | 1   2 |
-|-------|                      |-------|
-| A B C | is a legal state and | A B C | is not.
-+-------+                      +-------+
+    +-------+                      +-------+
+    |       |                      |       |
+    | 1     |                      | 3     |
+    | 3   2 |                      | 1   2 |
+    |-------|                      |-------|
+    | A B C | is a legal state and | A B C | is not.
+    +-------+                      +-------+
 
 Task 1: (List states) (10 pts)
 List all possible states and number these states from S1, S2, ..., to SN.
@@ -28,34 +28,30 @@ Use a graph to represent this blocks world.
 Task 3: (Adjacent matrix) (10 pts)
 Use an adjacent matrix to represent the graph in Task 2. For example,
 A graph
-S1 ---- S2
-|        |
-|        |
-S3 ---- S4
+
+    S1 ---- S2
+    |        |
+    |        |
+    S3 ---- S4
+
 can be represented as a matrix
-0 1 1 0
-1 0 0 1
-1 0 0 1
-0 1 1 0
+
+    0 1 1 0
+    1 0 0 1
+    1 0 0 1
+    0 1 1 0
 
 Task 4: Breadth first search (30 pts)
 Assuming the initial state is 
-+-------+                   
-| 1     |                   
-| 2     |                   
-| 3     |                   
-|-------|                      
-| A B C | 
-+-------+ 
-And the goal state is
 
-+-------+                   
-|     1 |                   
-|     2 |                   
-|     3 |                   
-|-------|                      
-| A B C | 
-+-------+
+    +-------+                        +-------+
+    | 1     |                        |     1 |
+    | 2     |                        |     2 |
+    | 3     |  And the goal state is |     3 |  
+    |-------|                        |-------|
+    | A B C |                        | A B C |
+    +-------+                        +-------+
+
 Use the Breadth first search algorithm on the adjacent matrix representing the graph. Your program should read in the adjacent matrix and then print out the solution obtained in breadth first search.
 
 Task 5: Depth first search (30 pts)
