@@ -1,8 +1,17 @@
-var http = require('http');
+var app = require('express')();
+var http = require('http').Server(app);
+var io = require('socket.io')(http);
 
-var server = http.createServer(function(req, res) {
-  res.writeHead(200);
-  res.end('Hello Http');
+app.get('/', function(req, res){
+  res.sendfile('index.html');
+});
+
+io.on('connection', function(socket){
+  socket.on('chat message', function(msg){
+    io.emit('chat message', msg);
   });
-  
-server.listen(8080);
+});
+
+http.listen(3000, function(){
+  console.log('listening on *:3000');
+})
