@@ -6,7 +6,7 @@
     "express": "4.3.1",
     "socket.io": "1.0.2"
   },
-  "states": [
+  "nodes": [
     {"name": "s1", "value": "321000000"},
     {"name": "s2", "value": "000321000"},
     {"name": "s3", "value": "000000321"},
