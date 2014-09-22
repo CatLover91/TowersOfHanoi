@@ -79,4 +79,8 @@ var adjacency = [
 var BFSdata = BFS(adjacency, 0);
 //add dfs to output
 var DFSdata = DFS(adjacency, 0);
+<<<<<<< HEAD
 //output
+=======
+//output
+>>>>>>> ce9db22d2d898472aeb976b0b3f391c6bda76890
