@@ -1,0 +1,42 @@
+//An array of data objects to be displayed as graph nodes, each with the following properties:
+//
+//    name: The name of this object
+//    type: The type of this object (e.g. view, table, etc.)
+//    depends: An array of object names that this object depends on.
+//    group (optional): This could be thought of as a "subtype".
+
+[
+    {"name": "s0", "type": "state", "depends": ["s3", "s4"]},
+    {"name": "s1", "type": "state", "depends": ["s19", "s21"]},
+    {"name": "s2", "type": "state", "depends": ["s20", "s26"]},
+    {"name": "s3", "type": "state", "depends": ["s4", "s10"]},
+    {"name": "s4", "type": "state", "depends": ["s8"]},
+    {"name": "s5", "type": "state", "depends": ["s6", "s7", "s8"]},
+    {"name": "s6", "type": "state", "depends": ["s9", "s10"]},
+    {"name": "s7", "type": "state", "depends": ["s8", "s24"]},
+    {"name": "s8", "type": "state", "depends": []},
+    {"name": "s9", "type": "state", "depends": ["s10", "s3"]},
+    {"name": "s10", "type": "state", "depends": []},
+    {"name": "s11", "type": "state", "depends": ["s12", "s14", "s15"]},
+    {"name": "s12", "type": "state", "depends": ["s13", "s16"]},
+    {"name": "s13", "type": "state", "depends": ["s16", "s26"]},
+    {"name": "s14", "type": "state", "depends": ["s15", "s19"]},
+    {"name": "s15", "type": "state", "depends": ["s22"]},
+    {"name": "s16", "type": "state", "depends": ["s25"]},
+    {"name": "s17", "type": "state", "depends": ["s20", "s24", "s25"]},
+    {"name": "s18", "type": "state", "depends": ["s19", "s22", "s23"],
+    {"name": "s19", "type": "state", "depends": ["s21"]},
+    {"name": "s20", "type": "state", "depends": ["s26"]},
+    {"name": "s21", "type": "state", "depends": []},
+    {"name": "s22", "type": "state", "depends": ["s23"]},
+    {"name": "s23", "type": "state", "depends": []},
+    {"name": "s24", "type": "state", "depends": ["s25"]},
+    {"name": "s25", "type": "state", "depends": []},
+    {"name": "s26", "type": "state", "depends": []},
+    {"name": "s27", "type": "state", "depends": []}
+]
+//*.mkdn
+
+//Each object can have a Markdown file associated with it for additional documentation. The syntax is standard Markdown with one addition: object names can be enclosed in {{brackets}} to insert a link to that object.
+
+//If an object's name contains a slash (/), replace it with an underscore (_) in the documentation filename.
