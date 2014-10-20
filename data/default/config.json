@@ -1,0 +1,41 @@
+{
+    "title" : "Graph of Towers of Hanoi States",
+    "graph" : {
+        "linkDistance" : 150,
+        "charge"       : -400,
+        "height"       : 800,
+        "numColors"    : 4,
+        "labelPadding" : {
+            "left"   : 3,
+            "right"  : 3,
+            "top"    : 2,
+            "bottom" : 2
+        },
+        "labelMargin" : {
+            "left"   : 3,
+            "right"  : 3,
+            "top"    : 2,
+            "bottom" : 2
+        },
+        "ticksWithoutCollisions" : 50
+    },
+    "types" : {
+        "state" : {
+            "short" : "States",
+            "long"  : "The seperate states for Towers of Hanoi"
+        },
+        "BFShit" : {
+            "short" : "BFShit",
+            "long"  : "State hit by BFS"
+        },
+        "DFShit" : {
+            "short" : "DFShit",
+            "long"  : "State hit by DFS"
+        },
+        "BFSandDFS" : {
+            "short" : "BFSandDFS",
+            "long"  : "State hit by BFS and DFS"
+        }
+    },
+    "constraints" : []
+}

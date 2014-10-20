@@ -1,0 +1,9 @@
+    Hit by BFS at step 2
+    Hit by DFS at step 2
+    +-------+
+    |       |
+    | 2     |
+    | 3   1 |
+    |-------|
+    | A B C |
+    +-------+

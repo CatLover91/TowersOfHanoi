@@ -1,0 +1,217 @@
+[
+    {
+        "name": "s0", 
+        "type": "BFSandDFS", 
+        "depends": [
+            "s3", 
+            "s4"
+        ]
+    }, {
+        "name": "s1", 
+        "type": "BFShit", 
+        "depends": [
+            "s19", 
+            "s21"
+        ]
+        
+    }, {
+        "name": "s2", 
+        "type": "BFSandDFS", 
+        "depends": [
+            "s20", 
+            "s26"
+        ]
+    }, {
+        "name": "s3", 
+        "type": "BFSandDFS", 
+        "depends": [
+            "s0",
+            "s4", 
+            "s10"
+        ]
+    }, {
+        "name": "s4", 
+        "type": "BFSandDFS", 
+        "depends": [
+            "s0",
+            "s3",
+            "s8"
+        ]
+    }, {
+        "name": "s5", 
+        "type": "BFSandDFS", 
+        "depends": [
+            "s6", 
+            "s7", 
+            "s8"
+        ]
+    }, {
+        "name": "s6", 
+        "type": "BFShit", 
+        "depends": [
+            "s5",
+            "s9", 
+            "s10"
+        ]
+    }, {
+        "name": "s7", 
+        "type": "BFSandDFS", 
+        "depends": [
+            "s5",
+            "s8", 
+            "s24"
+        ]
+    }, {
+        "name": "s8", 
+        "type": "BFSandDFS", 
+        "depends": [
+            "s4",
+            "s5",
+            "s7"
+        ]
+    }, {
+        "name": "s9", 
+        "type": "BFShit", 
+        "depends": [
+            "s6",
+            "s10", 
+            "s23"
+        ]
+    }, {
+        "name": "s10", 
+        "type": "BFShit", 
+        "depends": [
+            "s3",
+            "s6",
+            "s9"
+        ]
+    }, {
+        "name": "s11", 
+        "type": "BFShit", 
+        "depends": [
+            "s12", 
+            "s14", 
+            "s15"
+        ]
+    }, {
+        "name": "s12", 
+        "type": "DFShit", 
+        "depends": [
+            "s11",
+            "s13", 
+            "s16"
+        ]
+    }, {
+        "name": "s13", 
+        "type": "DFShit", 
+        "depends": [
+            "s12",
+            "s16", 
+            "s26"
+        ]
+    }, {
+        "name": "s14", 
+        "type": "BFShit", 
+        "depends": [
+            "s11",
+            "s15", 
+            "s21"
+        ]
+    }, {
+        "name": "s15", 
+        "type": "BFShit", 
+        "depends": [
+            "s11",
+            "s14",
+            "s22"
+        ]
+    }, {
+        "name": "s16", 
+        "type": "DFShit", 
+        "depends": [
+            "s12",
+            "s13",
+            "s25"
+        ]
+    }, {
+        "name": "s17", 
+        "type": "BFSandDFS", 
+        "depends": [
+            "s20", 
+            "s24", 
+            "s25"
+        ]
+    }, {
+        "name": "s18", 
+        "type": "BFShit", 
+        "depends": [
+            "s19", 
+            "s22", 
+            "s23"
+        ]
+    }, {
+        "name": "s19", 
+        "type": "BFShit", 
+        "depends": [
+            "s1",
+            "s18",
+            "s21"
+        ]
+    }, {
+        "name": "s20", 
+        "type": "BFSandDFS", 
+        "depends": [
+            "s2",
+            "s17",
+            "s26"
+        ]
+    }, {
+        "name": "s21", 
+        "type": "BFShit", 
+        "depends": [
+            "s1",
+            "s14",
+            "s19"
+        ]
+    }, {
+        "name": "s22", 
+        "type": "state", 
+        "depends": [
+            "s15",
+            "s18",
+            "s23"
+        ]
+    }, {
+        "name": "s23", 
+        "type": "BFShit", 
+        "depends": [
+            "s9",
+            "s18",
+            "s22"
+        ]
+    }, {
+        "name": "s24", 
+        "type": "BFSandDFS", 
+        "depends": [
+            "s7",
+            "s17",
+            "s25"
+        ]
+    }, {
+        "name": "s25", 
+        "type": "BFSandDFS", 
+        "depends": [
+            "s16",
+            "s17",
+            "s24"
+        ]
+    }, {
+        "name": "s26", 
+        "type": "DFShit", 
+        "depends": [
+            "s2",
+            "s13",
+            "s20"
+        ]
+    }
+]
